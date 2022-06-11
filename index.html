@@ -1,0 +1,26 @@
+<!-- html 파일에 JS 파일 작성 방법 
+- HTML과 JavaScript 분리
+- defer 속성 작성
+<head>또는 <body>의 <script>에 js 파일 작성
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="hellow.js" defer></script>
+        <title>자바스크립트</title>
+    </head>
+    <body>
+  
+    </body>
+</html>
+
+<!-- defer 뜻 엘리먼트들을 먼저 해놓고 마지막에 js 노드트리에 액세스해라. 이걸 안 쓸거면 body 태그 안에 js를 넣어라
+그래야 마지막에 다 마크업해놓고 마지막에 hellow.js 를 파싱해서 에러가 없다.
+head안에 있는 건 노드트리에 없다. body에 있는 건 노드트리에 있다.
+head 안에 넣는 게 좋다.
+head에 있는 건 렌더링을 하긴하는데 그렇게 크게하진앟았서.. 의미적으로 차이가 있다.
+-->
+
+
